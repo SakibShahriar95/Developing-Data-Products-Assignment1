@@ -1,0 +1,20 @@
+
+library(leaflet)
+city <- c('London','Paris','New York', 'Tokyo','Barcelona','Moscow','Chicago','Singapore','Dubai','San Francisco')
+Latitude <- c(51.5074,
+              48.8566, 40.7128,35.6895,41.3851, 55.7558, 41.8781,1.3521, 25.2048, 37.7749)
+Longitude <- c(0.1278,2.3522,
+               74.006,139.6917,2.1734, 37.6173, 87.6298, 103.8198, 55.2708,122.4194)
+top10City <- data.frame(city, Latitude, Longitude)
+
+top10map <- top10City %>%
+    leaflet() %>%
+    addTiles() %>%
+    
+    
+    addMarkers(label = top10City$city, 
+               lat = top10City$Latitude, 
+               lng = top10City$Longitude)%>% 
+    addCircles(weight=1)
+
+print(top10map)
