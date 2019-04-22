@@ -3,6 +3,6 @@ Course project from the Developing Data Product course, offered by the Johns Hop
 
 Create a web page using R Markdown that features a map created with Leaflet.
 
-Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+This is the visualization using Leaflet:
 
-Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
+http://rpubs.com/Sakib678/476383
